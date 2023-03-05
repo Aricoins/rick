@@ -1,5 +1,7 @@
 export default function SearchBar(props) {
 
+
+   
    console.log(props)
    return (
       <div>

@@ -2,24 +2,26 @@ import styled from "styled-components";
 
 
 const EstiloDiv=styled.div`
-background-color: #06ea3c ;
+background-color: #020005 ;
 display: inline-flex;
 height: 20%;
+color: white;
 
 `
 
 
 const Style = styled.h2`
-background-color: #07f617;
+background-color: #636563;
 color: white;
 :hover{
 background-color: #f28e03;
+color: black;
+
 }
 `
 
 
 const ImagenBrilla =styled.h2 `
-   background-color:#f28e03
    :hover{
       filter: brightness(1.2)
    }

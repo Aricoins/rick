@@ -2,7 +2,7 @@ import Card from './Card';
 import styled from 'styled-components';
 
 const EstilosCards = styled.div`
-background-color: white;
+background-color: #0a0101;
 `
 
 export default function Cards(props) {
