@@ -1,12 +1,34 @@
+import styled from "styled-components";
+
+const Barra = styled.nav`
+   
+background-color: #050101;
+`
+const Boton = styled.button`
+  display: inline-block;
+  width: 10 rem;
+  color: #050000;
+  font-size: large;
+  :hover{
+
+   background-color: #0a0808;
+   color: #f8f1f1;
+
+  }
+`
+
 export default function SearchBar(props) {
 
 
-   
+
    console.log(props)
    return (
-      <div>
+      <Barra>
+         
+         <div>
           <input type='search' />
-      <button onClick={()=> props.onSearch("Búsquenme en la libertad")}>Agregar</button>
+          <Boton><button onClick={()=> props.onSearch("Búsquenme en la libertad")}><Boton> Agregar</Boton></button></Boton>
       </div>
+      </Barra>
    );
 }
