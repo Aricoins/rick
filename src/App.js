@@ -9,7 +9,7 @@ function App () {
     <div className='App' style={{ padding: '25px' }}>
       <div>
         <Card
-        id={Rick.id}
+           id={Rick.id}
           name={Rick.name}
           species={Rick.species}
           gender={Rick.gender}

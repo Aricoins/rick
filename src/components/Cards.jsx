@@ -2,11 +2,11 @@ import Card from './Card';
 
 
 export default function Cards(props) {
-   console.log(props)
    const { characters } = props;
-   const lista = characters.map((e) => 
+   const lista = characters.map((e, index) => 
          <Card 
-                       name={e.name} 
+            id ={e.id}
+            name={e.name} 
             image= {e.image} 
             species={e.species} 
             gender={e.gender}

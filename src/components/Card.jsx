@@ -7,7 +7,8 @@ export default function Card(props) {
          <h2>{props.name}</h2>
          <h2>{props.species}</h2>
          <h2>{props.gender}</h2>
-         <img src={props.image} alt="imagen" />
+         <h3>ID: {props.id}</h3>
+         <img src={props.image} alt="Acá debería verse una imagen" />
       </div>
    );
 }
