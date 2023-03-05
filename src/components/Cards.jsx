@@ -1,5 +1,9 @@
 import Card from './Card';
+import styled from 'styled-components';
 
+const EstilosCards = styled.div`
+background-color: white;
+`
 
 export default function Cards(props) {
    const { characters } = props;
@@ -12,5 +16,5 @@ export default function Cards(props) {
             gender={e.gender}
             onClose={() => window.alert('Emulamos que se cierra la card')}
             />)
-   return <div>{lista}</div>
+   return <EstilosCards><div>{lista}</div></EstilosCards>
 }

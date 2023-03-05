@@ -1,4 +1,5 @@
 .App {
    text-align: center;
-   background-color: blueviolet;
+   background-image: url(../public/rick.gif);
+   background-size: 300px;
 }
