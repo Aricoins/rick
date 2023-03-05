@@ -1,5 +1,6 @@
 .App {
    text-align: center;
    background-image: url(../public/rick.gif);
-   background-size: 33%;
+   background-size: 100%;
+   background-attachment: fixed;
 }

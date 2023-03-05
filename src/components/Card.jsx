@@ -4,7 +4,7 @@ import styled from "styled-components";
 const EstiloDiv=styled.div`
 background-color: #020005 ;
 display: inline-flex;
-height: 20%;
+height: 45%;
 color: white;
 
 `
@@ -14,7 +14,7 @@ const Style = styled.h2`
 background-color: #636563;
 color: white;
 :hover{
-background-color: #f28e03;
+background-color: #f256b3;
 color: black;
 
 }
