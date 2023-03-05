@@ -27,7 +27,7 @@ export default function SearchBar(props) {
          
          <div>
           <input type='search' />
-          <Boton><button onClick={()=> props.onSearch("Búsquenme en la libertad")}><Boton> Agregar</Boton></button></Boton>
+          <Boton><button onClick={()=> props.onSearch("En desarrollo")}><Boton> Agregar</Boton></button></Boton>
       </div>
       </Barra>
    );
