@@ -13,6 +13,7 @@ const Boton = styled.button`
 
    background-color: #0a0808;
    color: #f8f1f1;
+   cursor: pointer;
 
   }
 `

@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-image: url(../public/rick.gif);
+  background-size: 87%;
+  background-position: top;
+  background-attachment:fixed
   
 }
 
