@@ -65,8 +65,8 @@ this.state= {
  
 }
 componentWillUnmount(){
-   this.state.mostrar=false
-   console.log("chau")
+    this.state.mostrar=false;
+     console.log("chau")
    
 }
 // onButtonClick(e){
@@ -83,6 +83,7 @@ componentWillUnmount(){
       return(
      <EstiloDiv> <div>
         <BotonBorde onClick={this.componentWillUnmount}> X </BotonBorde>
+       {this.state.mostrar = true ? <Card/> :  null}
          <Style><h2>{this.props.name}</h2></Style>
          <Propss> <h3>{this.props.species}</h3></Propss>
          <Propss><h3>{this.props.gender}</h3></Propss>
