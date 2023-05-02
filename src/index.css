@@ -6,13 +6,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-image: url(../public/rick.gif);
+  background-image: url(../public/rick2.gif);
   background-size: 87%;
   background-position: top;
   background-attachment:fixed
   
 }
+button{
 
+width: 200px;
+height: 200px;
+
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

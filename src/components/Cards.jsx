@@ -1,22 +1,24 @@
+import React from 'react';
 import Card from './Card';
-import styled from 'styled-components';
-
-const Lista= styled.div`
-
-border-color: aliceblue;
-border: 2%
-`
+import './cards.css'
 
 export default function Cards(props) {
-   const { characters } = props;
-   const lista = characters.map((e, index) => 
+   const { characters , eliminarPersonaje} = props;
+   const lista = characters.map((e) => (
          <Card 
-            id ={e.id}
+            key={e.id}
             name={e.name} 
-            image= {e.image} 
+            image={e.image} 
             species={e.species} 
             gender={e.gender}
-            onClose={() => window.alert('Pronto se podrá cerrar')}
-            />)
-   return <Lista><div>{lista}</div></Lista>
-}
+            eliminarPersonaje={() => eliminarPersonaje(e.id)}
+         />
+        
+   ))
+  
+     return (
+      <div className='lista'>
+         {lista}
+      </div>
+   );
+     }
