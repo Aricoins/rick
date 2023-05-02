@@ -32,10 +32,7 @@ function App() {
         />
           <Cards
           characters={characters} eliminarPersonaje={eliminarPersonaje} />
-     
-          <hr />
-      </div>
-      
+        </div>
       </div>
   )
   }
