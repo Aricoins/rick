@@ -7,6 +7,7 @@ function Detail(props) {
   const { character , setCharacter} = props;
   
   useEffect(() => {
+      const { character , setCharacter} = props;
     axios(`https://rickandmortyapi.com/api/character/${id}`)
       .then(({ data }) => {
         if (data.name) {
