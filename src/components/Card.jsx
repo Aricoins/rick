@@ -1,14 +1,13 @@
 import styled from "styled-components";
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
 const ImagenBrilla = styled.h2`
-  opacity: 2;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-self: self-start;
   :hover {
     filter: brightness(1.2);
   }
@@ -18,17 +17,18 @@ const EstiloDiv = styled.div`
   background-color: #131016;
   display: flex;
   flex-direction: column;
-  width: 20%;
-  align-items: center;
-  height: 45%;
+  width: 30%;
   border-radius: 10px;
   opacity: 0.9;
+  font-size: small;
+  height: 15%;
+  justify-content: center;
 `;
 
 const Style = styled.h2`
   color: white;
   :hover {
-    background-color: #7b0808;
+    background-color: #4dcceb45;
     -webkit-text-stroke: 1px white;
     color: black;
     cursor: pointer;
@@ -36,14 +36,15 @@ const Style = styled.h2`
 `;
 
 const BotonBorde = styled.button`
-  background-color: #4a0505;
+  background-color: #fd0909;
+  display: flex;
   align-content: flex-end;
   height: 5%;
-  width: 8%;
+  width: 10%;
   padding: 2%;
-  color: #e1d9d9;
+  color: #a19f9f;
   margin-left: 80%;
-  border-color: #e1d9d9;
+  border-color: #a19f9f;
   cursor: pointer;
 `;
 
@@ -57,11 +58,10 @@ const H3 = styled.h3`
 `;
 export default function Card(props) {
 
-
    return (
     <EstiloDiv>
       <BotonBorde onClick={() => { props.eliminarPersonaje ()}} >X</BotonBorde>
-      <Style>{props.name}</Style>
+      <Style><Link to ={`/detail/${props.id}`}>{props.name}</Link></Style>
       <H3>{props.species}</H3>
       <H3>{props.gender}</H3>
       <H3>{props.id}</H3>

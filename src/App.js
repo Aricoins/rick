@@ -4,15 +4,22 @@ import axios from 'axios'
 import Nav from "./components/Nav.jsx"
 import Cards from './components/Cards.jsx'
 import { useState } from 'react'
+import Detail from './views/Detail'
+import { Route, Routes, useParams } from 'react-router-dom'
+import About from './views/About'
+
+
+
 
 
 function App() {
-  const [characters, setCharacters] = useState([])
+  const [character, setCharacter] = useState([])
+const {id} = useParams()
 
   function searchUser(id) {
     axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
        if (data.name) {
-          setCharacters((oldChars) => [...oldChars, data]);
+          setCharacter((oldChars) => [...oldChars, data]);
        } else {
           window.alert('¡No hay personajes con este ID!');
        }
@@ -20,19 +27,29 @@ function App() {
   }
 
   function eliminarPersonaje(id) {
-    const nuevosPersonajes = characters.filter((personaje) => personaje.id !== id);
-    setCharacters(nuevosPersonajes);
+    const nuevosPersonajes = character.filter((personaje) => personaje.id !== id);
+    setCharacter(nuevosPersonajes);
   }
+
+
 
   return (
     <div className='App'>
       <div>
+    
         <Nav
           searchUser={searchUser}
         />
-          <Cards
-          characters={characters} eliminarPersonaje={eliminarPersonaje} />
-        </div>
+        <Routes>
+          <Route path="/about" element={ <About
+          />}/>
+          <Route path="/" element={<Cards character={character} eliminarPersonaje={eliminarPersonaje}/>}/>
+          <Route path="/detail/:id" element={<Detail id={id} character={character} setCharacter={setCharacter} eliminarPersonaje={eliminarPersonaje} />}/>
+
+
+
+        </Routes>
+      </div>
       </div>
   )
   }
