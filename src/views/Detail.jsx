@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 function Detail(props) {
@@ -7,8 +7,7 @@ function Detail(props) {
   const { character , setCharacter} = props;
   
   useEffect(() => {
-      const { character , setCharacter} = props;
-    axios(`https://rickandmortyapi.com/api/character/${id}`)
+          axios(`https://rickandmortyapi.com/api/character/${id}`)
       .then(({ data }) => {
         if (data.name) {
           setCharacter(data);
