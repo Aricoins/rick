@@ -1,5 +1,9 @@
 import { useParams } from "react-router-dom";
+<<<<<<< HEAD
 import { useEffect } from "react";
+=======
+import { useEffect, useState } from "react";
+>>>>>>> f8aa6c6f5d931f3aa85a57c2b63c06990c351645
 import axios from "axios";
 import styled from "styled-components";
 // import img from "./gif/imagen.jpeg"
@@ -29,6 +33,7 @@ function Detail(props) {
   const { character , setCharacter} = props;
   
   useEffect(() => {
+<<<<<<< HEAD
    axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
       if (data.name) {
          setCharacter(data);
@@ -38,6 +43,21 @@ function Detail(props) {
    });
    return setCharacter({});
 }, [id, setCharacter]);
+=======
+          axios(`https://rickandmortyapi.com/api/character/${id}`)
+      .then(({ data }) => {
+        if (data.name) {
+          setCharacter(data);
+        } else {
+          window.alert('No hay personajes con ese ID');
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        window.alert('Ocurrió un error al cargar el personaje');
+      });
+  }, [id]);
+>>>>>>> f8aa6c6f5d931f3aa85a57c2b63c06990c351645
   
   return (<>
    <h1>{id}</h1>
