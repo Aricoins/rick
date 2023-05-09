@@ -66,7 +66,7 @@ export default function Card(props) {
       <H3>{props.gender}</H3>
       <H3>{props.id}</H3>
       <ImagenBrilla>
-       <img src={props.image} alt="Acá debería verse una imagen" />
+       <img src={props.image} alt="Acá debería verse la imagen del perdonaje"  />
       </ImagenBrilla>
     </EstiloDiv>
   );

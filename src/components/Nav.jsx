@@ -26,7 +26,7 @@ export default function Nav (props){
     return(
         <>
        <Botones> <Link to="/about"> About</Link> </Botones>
-       <Botones> <Link to="/">Home </Link></Botones>
+       <Botones> <Link to="/home">Home </Link></Botones>
        <SearchBar  searchUser={props.searchUser} />
                 </>
               )

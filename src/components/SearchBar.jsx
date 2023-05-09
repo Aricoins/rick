@@ -54,6 +54,12 @@ const Boton2 = styled.button`
   }
 `;
 
+// const Span = styled.span`
+//   display: flex;
+//   justify-content: center;
+//   align-content: center;
+//   flex-direction: row;
+// `
 export default function SearchBar(props) {
   const [id, setId] = useState('');
 
@@ -65,6 +71,7 @@ export default function SearchBar(props) {
   return (
     <Barra>
          <Input type='search' onChange={ingreso} />
+         <span>¡826 personajes!</span>
         <Boton onClick={() => { props.searchUser(id) }}>Agregar</Boton>
         <Boton2 onClick={() => {props.searchUser(personajeRandom)}}> Al azar</Boton2>
     </Barra>

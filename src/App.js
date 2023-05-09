@@ -37,14 +37,11 @@ const {id} = useParams()
     <div className='App'>
       <div>
     
-        <Nav
-          searchUser={searchUser}
-        />
+      <Nav path ="/"  searchUser={searchUser} />
         <Routes>
-          <Route path="/about" element={ <About
-          />}/>
-          <Route path="/" element={<Cards character={character} eliminarPersonaje={eliminarPersonaje}/>}/>
-          <Route path="/detail/:id" element={<Detail id={id} character={character} setCharacter={setCharacter} eliminarPersonaje={eliminarPersonaje} />}/>
+                <Route path="/about" element={ <About/>}/>
+        <Route path="/home" element={<Cards character={character} eliminarPersonaje={eliminarPersonaje}/>}/>
+        <Route path="/detail/:id" element={<Detail id={id} character={character} setCharacter={setCharacter} eliminarPersonaje={eliminarPersonaje} />}/>
 
 
 

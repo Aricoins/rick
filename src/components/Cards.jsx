@@ -6,6 +6,7 @@ export default function Cards(props) {
    const { character , eliminarPersonaje} = props;
    const lista = character.map((e) => (
          <Card 
+         key= {e.id*24}
             id={e.id}
             name={e.name} 
             image={e.image} 
