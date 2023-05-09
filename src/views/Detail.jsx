@@ -1,9 +1,6 @@
+
 import { useParams } from "react-router-dom";
-<<<<<<< HEAD
 import { useEffect } from "react";
-=======
-import { useEffect, useState } from "react";
->>>>>>> f8aa6c6f5d931f3aa85a57c2b63c06990c351645
 import axios from "axios";
 import styled from "styled-components";
 // import img from "./gif/imagen.jpeg"
