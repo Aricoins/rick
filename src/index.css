@@ -7,17 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-image: url(../public/rick2.gif);
+  
   background-size: 87%;
   background-position: top;
-  background-attachment:fixed
-  
-}
-button{
+  background-attachment:fixed}
+  :hover{ background-image: url(../public/rick.gif);
+    background-size: auto;
 
-width: 200px;
-height: 200px;
+  }
 
-}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
