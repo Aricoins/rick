@@ -36,14 +36,25 @@ const {id} = useParams()
 
   return (
     <div className='App'>   
-      <VideoPlayer
-        className="video"
-        src={
-          "https://player.vimeo.com/external/435674703.sd.mp4?s=01ad1ba21dc72c1d34728e1b77983805b34daad7&profile_id=165&oauth2_token_id=57447761"
-        }
-        autoPlay={true}
-        muted={true}
-      />
+  <div class="context">
+        <h1>Pure Css Animated Background</h1>
+    </div>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
       <div>
     
       <Nav path ="/"  searchUser={searchUser} />
