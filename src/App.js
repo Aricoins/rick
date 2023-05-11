@@ -7,6 +7,7 @@ import { useState } from 'react'
 import Detail from './views/Detail'
 import { Route, Routes, useParams } from 'react-router-dom'
 import About from './views/About'
+import VideoPlayer from "react-background-video-player";
 
 
 
@@ -34,7 +35,15 @@ const {id} = useParams()
 
 
   return (
-    <div className='App'>
+    <div className='App'>   
+      <VideoPlayer
+        className="video"
+        src={
+          "https://player.vimeo.com/external/435674703.sd.mp4?s=01ad1ba21dc72c1d34728e1b77983805b34daad7&profile_id=165&oauth2_token_id=57447761"
+        }
+        autoPlay={true}
+        muted={true}
+      />
       <div>
     
       <Nav path ="/"  searchUser={searchUser} />
