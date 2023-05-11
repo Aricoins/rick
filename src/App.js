@@ -37,7 +37,7 @@ const {id} = useParams()
   return (
     <div className='App'>   
   <div class="context">
-        <h1>Pure Css Animated Background</h1>
+        <h5>Pure Css Animated Background</h5>
     </div>
 
 
