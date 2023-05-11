@@ -17,7 +17,7 @@ display: flex;
   justify-content: center;
   align-content: center;
   align-items: end; */
-`;
+`
 
 const Input= styled.input`
    
@@ -38,13 +38,13 @@ const Boton = styled.button`
     border: 0.08em solid white;
     transition-duration: 0.8s;
     cursor: pointer;
-        :hover{
-        background-color: white;
-        border-color: #081984;
-        border-bottom: #09090e;
-        color: #f5f3f3;
-        cursor: pointer;
-      }
+      //   :hover{
+      //   background-color: white;
+      //   border-color: #081984;
+      //   border-bottom: #09090e;
+      //   color: #f5f3f3;
+      //   cursor: pointer;
+      // }
 `
 
 export default function SearchBar(props) {
