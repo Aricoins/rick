@@ -8,23 +8,20 @@ import styled from "styled-components";
 const Onda = styled.div`
 
 opacity: 80%;
-background-color: black;
-color: #0afe0a
-
-
-
+background-color: white;
+color: #0afe0a;
+widht: 25%;
+padding: 2%;
 `
 const Rojo = styled.h3`
-   
+  
 color: red; 
-
 `
 const Datos=styled.ul`
    display: flex;
    flex-direction: column;
-
-
 `
+
 function Detail(props) {
   const { id} = useParams();
   const { character , setCharacter} = props;
