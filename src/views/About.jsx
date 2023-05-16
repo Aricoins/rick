@@ -25,7 +25,6 @@ width: 25em;
   height: 100%;
 `
 const Imagen= styled.img`
- background-image: url(./gif/arielgarciarogel.jpg);
 border-radius: 35%;
 width: 12em;
 height: 15em;

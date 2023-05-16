@@ -7,10 +7,7 @@ import { useState } from 'react'
 import Detail from './views/Detail'
 import { Route, Routes, useParams } from 'react-router-dom'
 import About from './views/About'
-import "./index.css"
-import  Form  from './components/Form.jsx'
-
-
+import { Form } from 'react-router-dom'
 
 
 function App() {
@@ -35,13 +32,13 @@ const {id} = useParams()
 
 
   return (
-  
-   <>             
+    <div className='App'>
 
-      <Form path ="/"/> 
+    
       <Nav path ="/"  searchUser={searchUser} />
         <Routes>
-        <Route className="aboutStyle" path="/about" element={ <About  display="flex"
+        <Route path ="/"  element={<Form/>} />
+              <Route className="aboutStyle" path="/about" element={ <About  display="flex"
   justify-content= "center"
   align-items= "center"/>}/>
         <Route path="/home" element={<Cards character={character} eliminarPersonaje={eliminarPersonaje}/>}/>
@@ -50,7 +47,7 @@ const {id} = useParams()
        
 
     </Routes>
-   </>
+</div>
    
   )
       }

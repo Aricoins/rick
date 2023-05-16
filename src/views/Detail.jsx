@@ -7,6 +7,7 @@ import styled from "styled-components";
 
 const Onda = styled.div`
 opacity: 80%;
+<<<<<<< HEAD
 background-color: #423b3b;
 color: #181814;
 width: 25em;
@@ -18,17 +19,28 @@ font-size: 0.8em;
   opacity: 0.9;
   justify-content: center;
   align-content: center;
+=======
+background-color: white;
+color: #0afe0a;
+widht: 25%;
+padding: 2%;
+>>>>>>> 093908215d5d713bace68600c29606bf3ed66964
 `
 const Rojo = styled.h3`
-   
+  
 color: red; 
-
 `
 const Datos=styled.ul`
+<<<<<<< HEAD
 color: #f5f4f7;
 width: 2em;
 
+=======
+   display: flex;
+   flex-direction: column;
+>>>>>>> 093908215d5d713bace68600c29606bf3ed66964
 `
+
 function Detail(props) {
   const { id} = useParams();
   const { character , setCharacter} = props;
