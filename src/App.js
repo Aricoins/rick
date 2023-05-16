@@ -35,9 +35,8 @@ const {id} = useParams()
     <div className='App'>
 
     
-      <Nav path ="/"  searchUser={searchUser} />
         <Routes>
-        <Route path ="/"  element={<Form/>} />
+        <Route path ="/"  element={<Form/> } />
               <Route className="aboutStyle" path="/about" element={ <About  display="flex"
   justify-content= "center"
   align-items= "center"/>}/>
