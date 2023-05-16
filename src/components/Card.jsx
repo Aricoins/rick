@@ -5,31 +5,40 @@ import { Link } from "react-router-dom";
 
 
 const ImagenBrilla = styled.h2`
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
+  margin: 1em;
+  justify-content: center;
+  border-radius: 10%;
   :hover {
     filter: brightness(1.2);
-  }
+    width: 83%;
+   }
 `;
 
 const EstiloDiv = styled.div`
-  background-color: #131016;
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  border-radius: 10px;
+  background-color: rgba(58, 58, 214, 0.5);
+  /* display: grid;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2; */
+  font-size: 0.8em;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0em 1em 2em 0.5em;
+  height: 22em;
+  border-radius: 1em;
   opacity: 0.9;
-  font-size: small;
-  height: 15%;
   justify-content: center;
+  align-content: center;
 `;
 
-const Style = styled.h2`
+const StyleLink = styled(Link)`
   color: white;
+  text-decoration: none;
   :hover {
     background-color: #4dcceb45;
-    -webkit-text-stroke: 1px white;
     color: black;
     cursor: pointer;
   }
@@ -38,36 +47,38 @@ const Style = styled.h2`
 const BotonBorde = styled.button`
   background-color: #fd0909;
   display: flex;
-  align-content: flex-end;
-  height: 5%;
+  align-content: space-around;
+  height: 9%;
   width: 10%;
   padding: 2%;
-  color: #a19f9f;
   margin-left: 80%;
-  border-color: #a19f9f;
   cursor: pointer;
+  :hover{
+    background-color: #eeabab;
+    color:white;
+  }
 `;
 
 const H3 = styled.h3`
-  text-shadow: 1px 0px 0px, 1px 1px 0px white, -1px 0px 0px white,
-    1px -1px 0px white;
-  :hover {
-    background-color: azure;
-    cursor: pointer;
-  }
+color:white;
+display: flex;
+justify-content: center;
+margin: 1%;
+
+
 `;
 export default function Card(props) {
 
    return (
-    <EstiloDiv>
-      <BotonBorde onClick={() => { props.eliminarPersonaje ()}} >X</BotonBorde>
-      <Style><Link to ={`/detail/${props.id}`}>{props.name}</Link></Style>
-      <H3>{props.species}</H3>
-      <H3>{props.gender}</H3>
-      <H3>{props.id}</H3>
+    <EstiloDiv> <BotonBorde onClick={() => { props.eliminarPersonaje ()}} >X</BotonBorde>
+      <StyleLink to ={`/detail/${props.id}`}>{props.name}</StyleLink>
+      
       <ImagenBrilla>
        <img src={props.image} alt="Acá debería verse la imagen del perdonaje"  />
       </ImagenBrilla>
+      <H3>{props.species}</H3>
+      <H3>{props.gender}</H3>
+      <H3>{props.id}</H3>
     </EstiloDiv>
   );
 }

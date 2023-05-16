@@ -1,16 +1,35 @@
 import styled from "styled-components"
+import imagenn from "./gif/arielgarciarogel.jpg"
 
-const Imagen= styled.img`
- background-image: url(./gif/arielgarciarogel.jpg);
-border-radius: 50%;
-`
+
 
 const Bloque= styled.div`
-  width: 80%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+background-color: rgba(0, 0, 3, 0.5);
+width: 25em;
+ font-size: 0.8em;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0em 1em 2em 0.5em;
+  height: 10em;
+  border-radius: 1em;
+  opacity: 0.9;
+  grid-column-start: 4;
+  margin-left: 20em;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  */
+  height: 100%;
+`
+const Imagen= styled.img`
+ background-image: url(./gif/arielgarciarogel.jpg);
+border-radius: 35%;
+width: 12em;
+height: 15em;
+display:flex;
 
 `
 const Tecnologias = styled.div`
@@ -25,20 +44,17 @@ const Tecnologias = styled.div`
   padding: 5%;
 
 `
-
 const Estilo= styled.span`
   background-color: white;
   opacity: 0.8;
-  width: 60%;
-  
-  
+  width: 22em;
 `
 
 function About (){
 
     return(
 <Bloque>
-  <Imagen src="./gif/arielgarciarogel.jpg"/> 
+  <Imagen src={imagenn} alt="imagen del desarrollador"/> 
              <Estilo>   
         <h2> About Henrick.app</h2>    
         <p><b>Rick & Morty</b> es una serie animada creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim, también emitida en Cartoon Network.</p>

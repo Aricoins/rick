@@ -7,7 +7,8 @@ import { useState } from 'react'
 import Detail from './views/Detail'
 import { Route, Routes, useParams } from 'react-router-dom'
 import About from './views/About'
-
+import "./index.css"
+import  Form  from './components/Form.jsx'
 
 
 
@@ -34,20 +35,24 @@ const {id} = useParams()
 
 
   return (
-    <div className='App'>
-      <div>
-    
+  
+   <>             
+
+      <Form path ="/"/> 
       <Nav path ="/"  searchUser={searchUser} />
         <Routes>
-                <Route path="/about" element={ <About/>}/>
+        <Route className="aboutStyle" path="/about" element={ <About  display="flex"
+  justify-content= "center"
+  align-items= "center"/>}/>
         <Route path="/home" element={<Cards character={character} eliminarPersonaje={eliminarPersonaje}/>}/>
+       
         <Route path="/detail/:id" element={<Detail id={id} character={character} setCharacter={setCharacter} eliminarPersonaje={eliminarPersonaje} />}/>
+       
 
-
-
-        </Routes>
-      </div>
-      </div>
+    </Routes>
+   </>
+   
   )
-  }
+      }
+
 export default App
