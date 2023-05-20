@@ -7,7 +7,7 @@ import { useState } from 'react'
 import Detail from './views/Detail'
 import { Route, Routes, useParams } from 'react-router-dom'
 import About from './views/About'
-import Formulario from './components/Form'
+
 
 
 function App() {
@@ -35,7 +35,7 @@ const {id} = useParams()
     <div className='App'>
     
         <Routes>
-            <Route path ="/"  element={<Formulario/> }/>
+            <Route path ="/"  element={<Nav/> }/>
             <Route path="/home" element={<><Nav searchUser={searchUser}/><Cards character={character} eliminarPersonaje={eliminarPersonaje}/></>}/>
              <Route className="aboutStyle" path="/about" element={<><Nav searchUser={searchUser}/> <About  display="flex"
                   justify-content= "center"

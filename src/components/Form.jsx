@@ -2,12 +2,12 @@ import React from "react"
 import { Form } from "react-router-dom"
 
 
-export default function Formulario (){
-return (<>  <Form>
+export default function Form(){
+return (<>  <form>
    <h2> Henrick App</h2>
    <input></input>
    <button>Ingresar</button>
     
-   </Form></>
+   </form></>
 )
 }
