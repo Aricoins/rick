@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -11,6 +11,7 @@ const ImagenBrilla = styled.h2`
   margin: 1em;
   justify-content: center;
   border-radius: 10%;
+  transition: 1s;
   :hover {
     filter: brightness(1.2);
     width: 83%;
@@ -34,9 +35,10 @@ const EstiloDiv = styled.div`
   align-content: center;
 `;
 
-const StyleLink = styled(Link)`
+const StyleLink = styled(NavLink)`
   color: white;
   text-decoration: none;
+  transition: 1s;
   :hover {
     background-color: #4dcceb45;
     color: black;

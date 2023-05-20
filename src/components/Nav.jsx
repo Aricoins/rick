@@ -1,7 +1,8 @@
 import SearchBar from './SearchBar.jsx'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import "./Nav.css"
 
 
 const Navigator= styled.div`
@@ -14,19 +15,21 @@ align-items: center;
 
 `
 const Botones = styled.button`
-   background-color: #f3e706; 
-    border: none;
-    color: #080202;
-   width: 15%;
-   opacity: 1;
-   height: 2.5em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8%;
-    transition-duration: 0.2s;
+border-style: solid;
+border-color: yellow;
+color: black;
+background: #e4d8d8;
+box-shadow:  20px 20px 60px #c2b8b8,
+       -20px -20px 60px #fff8f8;
+width: 15%;
+text-align: center;
+display: inline-block;
+  font-size: 16px;
+  border-radius: 8%;
+  transition-duration: 1s;
      :hover{
+      color:black;
+      width: 28%;
         background-color: white;
         border-color: #f3e706;
         border-bottom: #f3e706;
@@ -37,10 +40,17 @@ const Botones = styled.button`
 
 
 `
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
   text-decoration: none;
-  &.active {
+  border-width: 1px;
+  border-color: yellow;
+  font-size: 20px ;
+  color: black;
+  background-color: yellow;
+  active {
+    background-color: yellow;
     font-weight: bold;
+    color: black;
   }
   `
 export default function Nav (props){

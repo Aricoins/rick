@@ -4,7 +4,8 @@ import imagenn from "./gif/arielgarciarogel.jpg"
 
 
 const Bloque= styled.div`
-background-color: rgba(0, 0, 3, 0.5);
+background-color: black;
+color: white;
 width: 25em;
  font-size: 0.8em;
   padding: 1em;
@@ -47,18 +48,20 @@ const Estilo= styled.span`
   background-color: white;
   opacity: 0.8;
   width: 22em;
-`
+  `
 
 function About (){
 
-    return(
+    return(<>
 <Bloque>
   <Imagen src={imagenn} alt="imagen del desarrollador"/> 
-             <Estilo>   
-        <h2> About Henrick.app</h2>    
-        <p><b>Rick & Morty</b> es una serie animada creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim, también emitida en Cartoon Network.</p>
+       <Estilo >   
+        <h2> About Henrick App</h2>    
+        <p>   Henrick App muestra los 827 personajes la serie <b>Rick&Morty </b> y los presenta en una Single Page Aplication. </p> <p> 
+         Fue desarrollada con React para Henry en mi aprendizaje como <i>front-end</i>. <hr />
+          Rick & Morty es una serie animada creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim, también emitida en Cartoon Network.
         La historia sigue las desventuras de un científico, Rick Sánchez, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos.
-       <p> <b>Henrick.app</b> trae de una API los 827 personajes de Roiland y los presenta en una Single Page Aplication. Fue desarrollada con React para Henry en mi aprendizaje como frontend.</p>
+       Henrick.app trae de una API los 827 personajes de Roiland y los presenta en una Single Page Aplication. Fue desarrollada con React para Henry en mi aprendizaje como frontend.</p>
        </Estilo>
        <Tecnologias>
         <h3> Desarrollado con Javascript, CSS3, HTML5, React, React Router y Redux </h3>
@@ -73,6 +76,7 @@ function About (){
     </Tecnologias>
   
     </Bloque>
+    </>
     )
 }
 
