@@ -24,7 +24,6 @@ box-shadow:  20px 20px 60px #c2b8b8,
 width: 15%;
 text-align: center;
 display: inline-block;
-  font-size: 16px;
   border-radius: 8%;
   transition-duration: 1s;
      :hover{
@@ -46,9 +45,10 @@ const StyledLink = styled(NavLink)`
   border-color: yellow;
   font-size: 20px ;
   color: black;
-  background-color: yellow;
+  background: #e4d8d8;
+  font-size: 80%;
   active {
-    background-color: yellow;
+    background-color: #00ff59;
     font-weight: bold;
     color: black;
   }
