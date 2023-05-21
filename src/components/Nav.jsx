@@ -12,7 +12,10 @@ background-color: black ;
 padding: 1%;
 opacity: 0.9;
 align-items: center;
-
+@media screen and (max-width : 900px) {
+  flex-direction: column;
+  
+}
 `
 const Botones = styled.button`
 border-style: solid;
@@ -30,13 +33,17 @@ display: inline-block;
      :hover{
       color:black;
       width: 28%;
-        background-color: white;
+        background-color: #f68f09;
         border-color: #f3e706;
         border-bottom: #f3e706;
         border-style: inset;
         -webkit-text-stroke: 1px white;
       
-    }
+     }
+     @media  only screen and (max-width : 900px){
+ 
+padding: 20px;
+width: 100% }
 
 
 `
@@ -53,6 +60,9 @@ const StyledLink = styled(NavLink)`
     font-weight: bold;
     color: black;
   }
+
+
+
   `
 export default function Nav (props){
 

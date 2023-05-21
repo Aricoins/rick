@@ -20,31 +20,31 @@ display: flex;
 `
 
 const Input= styled.input`
-   
-/* border-color: aqua;
-height: 2rem; */
+
+border-color: #5cf509;
+height: 2rem; 
 `
 
 const Boton = styled.button`
-    background-color: #081984;
-    color: white;
-    width: 25%;
-    height: 2.5em;
+    background-color: #5cf509;
+    color: #0d0000;
+    width: 30%;
+    height: 3em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius: 8%;
-    border: 0.08em solid white;
+    border: 0.08em solid black;
     transition-duration: 0.8s;
     cursor: pointer;
-      //   :hover{
-      //   background-color: white;
-      //   border-color: #081984;
-      //   border-bottom: #09090e;
-      //   color: #f5f3f3;
-      //   cursor: pointer;
-      // }
+       :hover{
+       background-color: white;
+        border-color: #22f901;
+        border-bottom: #09090e;
+      color: #080000;
+        cursor: pointer;
+      }
 `
 
 export default function SearchBar(props) {

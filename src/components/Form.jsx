@@ -5,14 +5,30 @@ import imagen from "../views/gif/ImagenW.jpeg"
 
 const Contenedor= styled.div`
     display: grid;
+    text-align: center;
     grid-template-columns: 20% 30% 30% 20%;
     max-width: 80%;
 justify-content: space-around;
 height: 80%;
+@media only screen and (max-width : 900px) {
+border-color: aliceblue;
+ border: 20%;
+ display: grid;
+ grid-template-columns: 100%; 
+ grid-template-rows: 100%;
+ grid-row-start: 3;
+ width: 180px;
+ gird
+ text-align: center;
+ justify-content: center;
+ align-content: center;
+}
+
 
 `
 
 const WelcomeCard = styled.div`
+text-align: center;
 background-color: black;
 color: white;
 max-width: 80%;
@@ -25,6 +41,15 @@ max-width: 80%;
   opacity: 0.9;
   flex-direction: column;
   grid-column-start: 3;
+  @media only screen and (max-width : 900px){
+width: 22em;
+margin-top: 50px;
+margin-bottom: 50px;
+justify-content: center;
+text-align: center;
+
+
+  }
   `;
 
 
@@ -62,12 +87,30 @@ const Formulario= styled.form`
  max-height: 80%;
 `
 
-
-
 export default function Form() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+//   const [access, setAccess]=useState(false)
+
+//   let EMAIL="arielgarcia@gmail.com"
+//   let PASSWORD="holasoyy0"
   const [error, setError] = useState('');
+
+// function login (userData){
+
+//     if (access === true) 
+//     return 
+// }
+
+  function handleChange(){
+    setUsername(username.value)  
+}
+
+
+
+
+
+
   function validateUser(value) {
     if(!/\S+@\S+\.\S+/.test(value)) {
       setError('el usuario tiene que ser un email');
@@ -82,13 +125,19 @@ export default function Form() {
        <ImagenW src={imagen}/>
        <h2> Los 827 personajes de Rick & Morty</h2>
         <Formulario>
+            <div> <label>Ingrese un e-mail:</label>
         <BotonIn className={error && 'danger'}
                 name="username" 
                 value={username} 
                 placeholder="username" 
-                onChange={(e) => validateUser(e.target.value)} 
-                />
+               onChange={ (e) => { handleChange(); validateUser(e.target.value); } }
+               
+               />
+
+            </div>
         {!error ? null : <span>{error}</span>}
+
+        <div> <label>Ingrese una contraseña:</label>
 
         <BotonIn name="password" 
                 value={password} 
@@ -96,8 +145,11 @@ export default function Form() {
                 type="password" 
                 onChange={(e) => setPassword(e.target.value)}
                 />
-
+</div>
+<div> <label>Ingresar</label>
              <BotonBorde type="submit" text="ingresar"/>
+         
+             </div>
          </Formulario> 
         
         </WelcomeCard>
