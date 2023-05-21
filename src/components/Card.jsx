@@ -30,12 +30,12 @@ const EstiloDiv = styled.div`
   box-shadow: 0em 1em 2em 0.5em;
   height: 22em;
   border-radius: 1em;
-  opacity: 0.9;
   justify-content: center;
   align-content: center;
 `;
 
 const StyleLink = styled(NavLink)`
+font-size: large;
   color: white;
   text-decoration: none;
   transition: 1s;

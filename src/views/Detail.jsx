@@ -6,39 +6,25 @@ import styled from "styled-components";
 // import img from "./gif/imagen.jpeg"
 
 const Onda = styled.div`
-opacity: 80%;
-<<<<<<< HEAD
-background-color: #423b3b;
-color: #181814;
-width: 25em;
-font-size: 0.8em;
+background-color: #060000;
+color:white;
+width: 22em;
   padding: 1em;
   margin: 1em;
   box-shadow: 0em 1em 2em 0.5em;
   border-radius: 1em;
   opacity: 0.9;
+  height: 100%;
+  left:0;
+  right:0;
+  margin:auto;
   justify-content: center;
-  align-content: center;
-=======
-background-color: white;
-color: #0afe0a;
-widht: 25%;
-padding: 2%;
->>>>>>> 093908215d5d713bace68600c29606bf3ed66964
+  align-items: center;
+ 
 `
-const Rojo = styled.h3`
-  
+const Propiedades = styled.h3`
+  justify-content: center;
 color: red; 
-`
-const Datos=styled.ul`
-<<<<<<< HEAD
-color: #f5f4f7;
-width: 2em;
-
-=======
-   display: flex;
-   flex-direction: column;
->>>>>>> 093908215d5d713bace68600c29606bf3ed66964
 `
 
 function Detail(props) {
@@ -55,25 +41,24 @@ function Detail(props) {
    });
    return setCharacter({});
 }, [id, setCharacter]);
-        
+        console.log(character)
   return (<>
-  <div style={{display: "flex", justifyContent: "center"}}>
-   <Onda><Datos>
-   <h1>{id}</h1>
-      <img style={{width:"20em"}} alt="Imagen del personaje" src={character.image} /> 
-      <Rojo>Nombre |</Rojo><h3>{character.name}</h3>
-     <Rojo>Género |</Rojo>  <h3>{character.gender}</h3>
+    <Onda>
+    <Propiedades>Nombre :</Propiedades>{character.name}
+      <h1>{id}</h1>
+      <img style={{width:"80%"}} alt="Imagen del personaje" src={character.image} /> 
+    
+     <Propiedades>Género :</Propiedades>  {character.gender}
      
       {/* <h4>{props.origin?.name}</h4> */}
-     <Rojo>Especie |</Rojo> <h3>{character.species}</h3>
+     <Propiedades>Especie :</Propiedades> {character.species}
     
-      <Rojo>Episodio |</Rojo><div> {character.episode}</div>
-      </Datos>
+      <Propiedades>Episodio:</Propiedades> {character.episode}
+      
     
       {/* <div>{character.result.dimension}</div> */}
      
     </Onda>
-    </div>
     
       </>
   );

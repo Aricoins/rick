@@ -2,7 +2,7 @@ import SearchBar from './SearchBar.jsx'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import "./Nav.css"
+
 
 
 const Navigator= styled.div`
@@ -26,6 +26,7 @@ text-align: center;
 display: inline-block;
   border-radius: 8%;
   transition-duration: 1s;
+  font-size: 2em;
      :hover{
       color:black;
       width: 28%;
@@ -47,7 +48,7 @@ const StyledLink = styled(NavLink)`
   color: black;
   background: #e4d8d8;
   font-size: 80%;
-  active {
+  :active {
     background-color: #00ff59;
     font-weight: bold;
     color: black;

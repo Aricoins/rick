@@ -16,13 +16,10 @@ width: 25em;
   opacity: 0.9;
   grid-column-start: 4;
   margin-left: 20em;
-  /* display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
   align-self: center;
-  */
   height: 100%;
 `
 const Imagen= styled.img`
@@ -37,7 +34,7 @@ const Tecnologias = styled.div`
     flex-direction:column; 
     background-color: white;
   opacity: 0.8;
-  justify-content: space-around;
+  justify-content: center;
   color: black;
   font-family: Lato;
   font-size: 80%;
@@ -54,11 +51,13 @@ function About (){
 
     return(<>
 <Bloque>
-  <Imagen src={imagenn} alt="imagen del desarrollador"/> 
+  <Imagen src={imagenn} alt="imagen del desarrollador"/>
+   <h2> About Henrick App</h2>   
        <Estilo >   
-        <h2> About Henrick App</h2>    
+         
         <p>   Henrick App muestra los 827 personajes la serie <b>Rick&Morty </b> y los presenta en una Single Page Aplication. </p> <p> 
-         Fue desarrollada con React para Henry en mi aprendizaje como <i>front-end</i>. <hr />
+         Fue desarrollada con React para Henry en mi aprendizaje como <i>front-end</i>. 
+         <hr/>
           Rick & Morty es una serie animada creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim, también emitida en Cartoon Network.
         La historia sigue las desventuras de un científico, Rick Sánchez, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos.
        Henrick.app trae de una API los 827 personajes de Roiland y los presenta en una Single Page Aplication. Fue desarrollada con React para Henry en mi aprendizaje como frontend.</p>
