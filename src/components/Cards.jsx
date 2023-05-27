@@ -3,8 +3,8 @@ import Card from './Card';
 import './cards.css'
 
 export default function Cards(props) {
-   const { character , eliminarPersonaje} = props;
-   const lista = character.map((e) => (
+   const { characters , eliminarPersonaje} = props;
+   const lista = characters.map((e) => (
          <Card 
          key= {e.id*24}
             id={e.id}

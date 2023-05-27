@@ -2,8 +2,6 @@ import styled from "styled-components";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
-
 const ImagenBrilla = styled.h2`
   width: 80%;
   display: flex;
@@ -33,7 +31,6 @@ const EstiloDiv = styled.div`
   justify-content: center;
   align-content: center;
 `;
-
 const StyleLink = styled(NavLink)`
 font-size: large;
   color: white;
@@ -45,7 +42,6 @@ font-size: large;
     cursor: pointer;
   }
 `;
-
 const BotonBorde = styled.button`
   background-color: #fd0909;
   display: flex;
@@ -60,7 +56,6 @@ const BotonBorde = styled.button`
     color:white;
   }
 `;
-
 const H3 = styled.h3`
 color:white;
 display: flex;
@@ -69,6 +64,7 @@ margin: 1%;
 
 
 `;
+
 export default function Card(props) {
 
    return (

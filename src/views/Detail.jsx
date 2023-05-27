@@ -29,31 +29,32 @@ color: red;
 
 function Detail(props) {
   const { id} = useParams();
-  const { character , setCharacter} = props;
+  const { characters , setCharacters} = props;
   
   useEffect(() => {
    axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
       if (data.name) {
-         setCharacter(data);
+         setCharacters(data);
       } else {
          window.alert('No hay personajes con ese ID');
       }
    });
-   return setCharacter({});
-}, [id, setCharacter]);
-        console.log(character)
+   return setCharacters({});
+}, [id, setCharacters]);
+
+        console.log(characters)
   return (<>
     <Onda>
-    <Propiedades>Nombre :</Propiedades>{character.name}
+    <Propiedades>Nombre :</Propiedades>{characters.name}
       <h1>{id}</h1>
-      <img style={{width:"80%"}} alt="Imagen del personaje" src={character.image} /> 
+      <img style={{width:"80%"}} alt="Imagen del personaje" src={characters.image} /> 
     
-     <Propiedades>Género :</Propiedades>  {character.gender}
+     <Propiedades>Género :</Propiedades>  {characters.gender}
      
       {/* <h4>{props.origin?.name}</h4> */}
-     <Propiedades>Especie :</Propiedades> {character.species}
+     <Propiedades>Especie :</Propiedades> {characters.species}
     
-      <Propiedades>Episodio:</Propiedades> {character.episode}
+      <Propiedades>Episodio:</Propiedades> {characters.episode}
       
     
       {/* <div>{character.result.dimension}</div> */}
