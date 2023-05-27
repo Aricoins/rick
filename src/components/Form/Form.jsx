@@ -129,7 +129,8 @@ return <Contenedor>
               <label htmlFor="password">
                   Password:
                   <BotonIn 
-                      type="password" id="password"
+                      type="password" 
+                      id="password"
                       value={userData.password}
                       name="password" 
                       onChange={handleChange}/>

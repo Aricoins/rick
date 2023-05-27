@@ -17,7 +17,8 @@ const ImagenBrilla = styled.h2`
 `;
 
 const EstiloDiv = styled.div`
-  background-color: rgba(58, 58, 214, 0.5);
+text-align: center;
+  background-color: rgba(112, 28, 5, 0.5);
   /* display: grid;
   grid-column-start: 1;
   grid-column-end: 5;
@@ -26,13 +27,14 @@ const EstiloDiv = styled.div`
   padding: 1em;
   margin: 1em;
   box-shadow: 0em 1em 2em 0.5em;
-  height: 22em;
+  height: 18em;
   border-radius: 1em;
   justify-content: center;
   align-content: center;
-`;
+  font-size: 2em;
+  `;
 const StyleLink = styled(NavLink)`
-font-size: large;
+  font-size: 1em;
   color: white;
   text-decoration: none;
   transition: 1s;
