@@ -22,7 +22,7 @@ display: flex;
 const Input= styled.input`
 
 border-color: #5cf509;
-height: 2rem; 
+height: 3rem; 
 `
 
 const Boton = styled.button`

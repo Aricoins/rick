@@ -1,5 +1,8 @@
 .lista{
-border-color: aliceblue;
+   background-image: url(C:\Users\igorm\OneDrive\Escritorio\rivk\rick\public\rick.gif); 
+background-repeat: no-repeat;
+background-position: center;
+   border-color: aliceblue;
 border: 20%;
 display: grid;
 grid-template-columns: 25% 25% 25% 25%;

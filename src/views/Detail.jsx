@@ -26,6 +26,8 @@ const Propiedades = styled.h3`
   justify-content: center;
 color: red; 
 `
+const Detalle = styled.div`
+background-color: red`
 
 function Detail(props) {
   const { id} = useParams();
@@ -45,9 +47,9 @@ function Detail(props) {
         console.log(characters)
   return (<>
     <Onda>
-    <Propiedades>Nombre :</Propiedades>{characters.name}
+    <Detalle>Nombre :{characters.name} </Detalle>
       <h1>{id}</h1>
-      <img style={{width:"80%"}} alt="Imagen del personaje" src={characters.image} /> 
+      <img alt="Imagen del personaje" src={characters.image} /> 
     
      <Propiedades>Género :</Propiedades>  {characters.gender}
      

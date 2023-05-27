@@ -30,19 +30,19 @@ border-color: aliceblue;
 `
 
 const WelcomeCard = styled.div`
-text-align: center;
 background-color: black;
 color: white;
 max-width: 80%;
- font-size: 0.8em;
-  padding: 1em;
-  margin: 1em;
-  box-shadow: 0em 1em 2em 0.5em;
-    max-height: 90%;
-  border-radius: 1em;
-  opacity: 0.9;
-  flex-direction: column;
-  grid-column-start: 3;
+max-height: 90%;
+padding: 50%;
+font-size: 0.8em;
+padding: 1em;
+margin: 1em;
+box-shadow: 0.5em 0.5em 20em 2em;
+border-radius: 1em;
+opacity: 0.9;
+flex-direction: column;
+grid-column-start: 3;
   @media only screen and (max-width : 900px){
 width: 22em;
 margin-top: 50px;
@@ -82,6 +82,11 @@ margin: auto;
 const H1 = styled.h1`
 color:white;
 display: flex;
+justify-content: center;
+align-items: center;
+:hover{
+  color:#07f907;
+}
 `;
 
 const Formulario= styled.form`
@@ -113,7 +118,9 @@ export default function Form({ login }) {
       login(userData)
   }
 return <Contenedor>
+ 
   <WelcomeCard>
+  <H1>Henrick App</H1>
     <ImagenW src={imagen}/>
           <Formulario onSubmit={handleSubmit}>
               <label htmlFor="email">

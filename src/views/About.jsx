@@ -1,12 +1,20 @@
 import styled from "styled-components"
 import imagenn from "./gif/arielgarciarogel.jpg"
-import { Link } from "react-router-dom";
 
 
 const Contenedor= styled.div`
+
   display:flex;
   justify-content: center;
-  
+  font-size: 1.5em;
+  padding: 8em;
+  margin: 1em;
+  box-shadow: 0em 1em 2em 0.5em;
+  height: 18em;
+  border-radius: 1em;
+  justify-content: center;
+  align-content: center;
+  /* background-image: url(public\rick2.gif) ; */
 `
 const Bloque= styled.div`
   background-color: rgba(58, 58, 214, 0.5);
@@ -31,12 +39,14 @@ border-radius: 35%;
 width: 12em;
 height: 15em;
 display:flex;
-
+padding: 20%;
+opacity: 0.6;
 `
 const Tecnologias = styled.div`
     display: flex;
     flex-direction:column; 
     background-color: white;
+    width: 1500px;
   opacity: 0.8;
   justify-content: center;
   text-align: center;
@@ -56,7 +66,8 @@ const Estilo= styled.span`
   background-color: #0e0e0e;
   opacity: 0.8;
   width: 22em;
-  color: white;  `
+  color: white; 
+  padding: 20%; `
 
 function About (){
 
@@ -66,12 +77,12 @@ function About (){
      <H2> About Henrick App</H2>   
      <Imagen src={imagenn} alt="imagen del desarrollador"/>
        <Estilo >   
-        Rick & Morty es una serie animada creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim, también emitida en Cartoon Network.
-        La historia sigue las desventuras de un científico, Rick Sánchez, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos.
-       Henrick.app trae de una API los 827 personajes de Roiland y los presenta en una Single Page Aplication. Fue desarrollada con React para Henry en mi aprendizaje como frontend.
-       </Estilo>
+       "Desarrollé esta Single Page Application para Henry, con el entusiasmo propio de quien descubre cómo funciona cada elemento. <br/>
+Rick, Morty y los 826 personajes que aquí se evocan pasan el tiempo entre la vida doméstica y los viajes espaciales e intergalácticos. <br/>
+Codeando las magias de la tecnología, ¿cómo no jugar a habitar ese intersticio?"
+        </Estilo>
        <Tecnologias>
-          <h3> Desarrollado por <Link> mí </Link> para Henry con Javascript, CSS3, HTML5, React, React Router y Redux </h3>
+          <h3> Con Javascript, CSS, HTML, React, React Router & Redux </h3>
         <div>
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo de JavaScript" width="50px" />
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="Logo de CSS" width="50px" />

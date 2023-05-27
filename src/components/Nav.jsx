@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 const Navigator= styled.div`
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
 background-color: black ;
 padding: 1%;
 opacity: 0.9;
@@ -22,8 +22,8 @@ border-style: solid;
 border-color: yellow;
 color: black;
 background: #e4d8d8;
-box-shadow:  20px 20px 60px #c2b8b8,
-       -20px -20px 60px #fff8f8;
+box-shadow:  2px 2px 6px #c2b8b8,
+       -2px -2px 20px #fff8f8;
 width: 15%;
 text-align: center;
 display: inline-block;
@@ -33,7 +33,7 @@ display: inline-block;
      :hover{
       color:black;
       width: 28%;
-        background-color: #f68f09;
+        background-color: #0df30d;
         border-color: #f3e706;
         border-bottom: #f3e706;
         border-style: inset;
@@ -56,9 +56,9 @@ const StyledLink = styled(NavLink)`
   background: #e4d8d8;
   font-size: 80%;
   :active {
-    background-color: #00ff59;
+    background-color: #000703;
     font-weight: bold;
-    color: black;
+    color: #e4d8d8;
   }
 
 

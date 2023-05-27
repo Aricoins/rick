@@ -1,6 +1,6 @@
 body{
 
-    background-image: url(./views/gif/imagen.jpeg);
+    background-color: #222222;
     display: flex;
     flex-direction: column;
     

@@ -18,7 +18,7 @@ const ImagenBrilla = styled.h2`
 
 const EstiloDiv = styled.div`
 text-align: center;
-  background-color: rgba(112, 28, 5, 0.5);
+  background-color: rgba(233, 138, 15, 0.5);
   /* display: grid;
   grid-column-start: 1;
   grid-column-end: 5;
