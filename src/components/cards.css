@@ -1,7 +1,4 @@
 .lista{
-  background-image: url(./rick/public/rick.gif); 
-background-repeat: no-repeat;
-background-position: center;
    border-color: aliceblue;
 border: 20%;
 display: grid;
