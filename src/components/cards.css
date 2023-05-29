@@ -1,5 +1,5 @@
 .lista{
-   background-image: url(./rick/public/rick.gif); 
+  background-image: url(./rick/public/rick.gif); 
 background-repeat: no-repeat;
 background-position: center;
    border-color: aliceblue;
@@ -16,5 +16,4 @@ border-color: aliceblue;
  grid-template-rows: 100%;
  grid-row-start: 5;
 }
-
-   }
+}
