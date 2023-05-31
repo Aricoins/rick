@@ -10,6 +10,7 @@ import About from './views/About'
  import { useParams } from 'react-router-dom';
 
 
+
 function App() {
    const { pathname } = useLocation()
    const navigate = useNavigate()
@@ -61,16 +62,16 @@ function App() {
           <Route path='/' element={<Form login={login}/>} />
           <Route path='/home' element={<Cards characters={characters} onClose={onClose} eliminarPersonaje={eliminarPersonaje}/>} />
           <Route path='/about' element={<About/>}/>
-          <Route path='/detail/:id' element={<Detail 
-                                              id={id} 
-                                              characters={characters} 
-                                              setCharacters={setCharacters} 
-                                              eliminarPersonaje={eliminarPersonaje}                   
-          />
-          }/>
+          <Route path='/detail/:id' element={
+          <Detail 
+                  id={id} 
+                  characters={characters} 
+                  setCharacters={setCharacters} 
+                  eliminarPersonaje={eliminarPersonaje}   />        
+                          }/>
+        
           </Routes>
-         
-      </div>
+          </div>
    );
 }
 

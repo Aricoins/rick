@@ -2,11 +2,24 @@ import styled from "styled-components";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+const Carta = styled.div`
+  
+background-color: #f7f7f3;
+opacity: 0.9;
+height: 25em;
+padding: 2%;
+margin: 2%;
+display: column;
+justify-content: center;
+align-items: flex-end;
+`
+
+
 const ImagenBrilla = styled.h2`
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  margin: 0.5em;
   justify-content: center;
   border-radius: 10%;
   transition: 1s;
@@ -17,28 +30,32 @@ const ImagenBrilla = styled.h2`
 `;
 
 const EstiloDiv = styled.div`
-text-align: center;
-  background-color: rgba(233, 138, 15, 0.5);
-  /* display: grid;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 2; */
-  font-size: 0.8em;
-  padding: 1em;
-  margin: 1em;
-  box-shadow: 0em 1em 2em 0.5em;
-  height: 18em;
-  border-radius: 1em;
+   width: 90% ;
+background-color: rgba(4, 79, 72, 0.715);
+  display: flex;
+  flex-direction: column ;
   justify-content: center;
+  margin: 0.5em;
+  box-shadow: 0em 1em 2em 0.5em;
+  height: 80%;
+  border-radius: 1em;
+  align-self: center;
+  align-items: center;
   align-content: center;
-  font-size: 2em;
-  `;
+  height: 80% `;
+
 const StyleLink = styled(NavLink)`
-  font-size: 1em;
-  color: white;
+   color: #f2f5f4;
   text-decoration: none;
+  text-align: center;
   transition: 1s;
+  background-color: red;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   :hover {
+  
     background-color: #4dcceb45;
     color: black;
     cursor: pointer;
@@ -47,11 +64,11 @@ const StyleLink = styled(NavLink)`
 const BotonBorde = styled.button`
   background-color: #fd0909;
   display: flex;
-  align-content: space-around;
-  height: 9%;
-  width: 10%;
-  padding: 2%;
-  margin-left: 80%;
+  color: white;
+  height: 8%;
+  width: 15%;
+  margin: 5%;
+  
   cursor: pointer;
   :hover{
     background-color: #eeabab;
@@ -67,12 +84,27 @@ margin: 1%;
 
 `;
 
+const Banda = styled.div`
+  background-color: red;
+ display: flex;
+ padding: 10%;
+  :hover {
+    background-color: #4dcceb45;
+    color: black;
+    cursor: pointer;
+  }
+`;
+
+
 export default function Card(props) {
 
    return (
-    <EstiloDiv> <BotonBorde onClick={() => { props.eliminarPersonaje ()}} >X</BotonBorde>
-      <StyleLink to ={`/detail/${props.id}`}>{props.name}</StyleLink>
-      
+ <Carta>
+ <BotonBorde onClick={() => { props.eliminarPersonaje ()}}> X </BotonBorde>
+ <EstiloDiv>
+<Banda>     
+  <StyleLink to ={`/detail/${props.id}`}>{props.name}</StyleLink>
+</Banda>
       <ImagenBrilla>
        <img src={props.image} alt="Acá debería verse la imagen del perdonaje"  />
       </ImagenBrilla>
@@ -80,6 +112,6 @@ export default function Card(props) {
       <H3>{props.gender}</H3>
       <H3>{props.id}</H3>
     </EstiloDiv>
-  );
+    </Carta> );
 }
 

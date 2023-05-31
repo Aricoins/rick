@@ -27,7 +27,9 @@ const Propiedades = styled.h3`
 color: red; 
 `
 const Detalle = styled.div`
-background-color: red`
+background-color: red
+
+`
 
 function Detail(props) {
   const { id} = useParams();
@@ -45,7 +47,8 @@ function Detail(props) {
 }, [id, setCharacters]);
 
         console.log(characters)
-  return (<>
+  return (
+    <>
     <Onda>
     <Detalle>Nombre :{characters.name} </Detalle>
       <h1>{id}</h1>

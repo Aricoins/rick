@@ -56,6 +56,7 @@ text-align: center;
 
 
 const BotonSubmit = styled.button`
+text-align: center;
 flex-direction: column;
 background-color: #d6e909;
   align-content: center;
@@ -92,11 +93,17 @@ align-items: center;
 const Formulario= styled.form`
  max-width: 80%;
  max-height: 80%;
+ text-align: center;
+ justify-content: center;
+ align-content: center;
+ align-items:center;
+ align-self: center;
 `
 const Pe =styled.p`
-  font-size: 1em;
+  font-size: 0.8em;
   color:white;
   background-color: #31c253;
+  justify-content: center;
 `
 
 
@@ -123,29 +130,39 @@ return <Contenedor>
   <H1>Henrick App</H1>
     <ImagenW src={imagen}/>
           <Formulario onSubmit={handleSubmit}>
-              <label htmlFor="email">
+              <div>
+                <label htmlFor="email">
                   Email:
                   <BotonIn 
                       type="text" 
                       id="email"
                       value={userData.email}
+                      placeholder="usuario@henrick.app"
                       name="email"
                       onChange={handleChange}/>
               </label>
               {errors.email && (<Pe>{errors.email}</Pe>)}
+              </div>
+              <br />
+            <div>
               <label htmlFor="password">
                   Password:
                   <BotonIn 
                       type="password" 
                       id="password"
                       value={userData.password}
+                      placeholder="pass1234"
                       name="password" 
                       onChange={handleChange}/>
               </label>
               {errors.password && (<Pe >{errors.password}</Pe>)}
-              <BotonSubmit>Submit</BotonSubmit>
-          </Formulario>
-          </WelcomeCard>
+              </div> <br />
+              <BotonSubmit>Ingresar</BotonSubmit>
+          </Formulario> <br />
+          Email: <br />
+          usuario@henrick.app 
+          <br /> Password: <br />
+          pass1234 </WelcomeCard>
       </Contenedor>;
 }
 

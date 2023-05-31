@@ -16,24 +16,23 @@ const Contenedor= styled.div`
   align-content: center;
   /* background-image: url(public\rick2.gif) ; */
 `
-const Bloque= styled.div`
-  background-color: rgba(58, 58, 214, 0.5);
-  max-width: 25%;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 0.8em;
-  padding: 1em;
-  margin: 1em;
-  box-shadow: 0em 1em 2em 0.5em;
-  height: 80%;
-  border-radius: 1em;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  align-items: center;
+ const Bloque= styled.div`
+//   max-width: 25%;
+//   display:flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   font-size: 0.8em;
+//   padding: 1em;
+//   margin: 1em;
+//   box-shadow: 0em 1em 2em 0.5em;
+//   height: 80%;
+//   border-radius: 1em;
+//   justify-content: center;
+//   align-content: center;
+//   text-align: center;
+   align-items: center;
   
-`;
+ `;
 const Imagen= styled.img`
 border-radius: 35%;
 width: 12em;

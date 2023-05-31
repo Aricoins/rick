@@ -1,6 +1,19 @@
 import React from 'react';
 import Card from './Card';
 import './cards.css'
+import imagen from "../views/gif/rick.gif"
+import styled from 'styled-components';
+
+
+const Background = styled.div`
+
+background-image: url(${imagen});
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 30%;
+background-position: center
+
+`
 
 export default function Cards(props) {
    const { characters , eliminarPersonaje} = props;
@@ -18,8 +31,11 @@ export default function Cards(props) {
    ))
   
      return (
+<Background>
       <div className='lista'>
          {lista}
       </div>
+</Background>
+
    );
      }

@@ -25,14 +25,15 @@ background: #e4d8d8;
 box-shadow:  2px 2px 6px #c2b8b8,
        -2px -2px 20px #fff8f8;
 width: 15%;
+height: 3em;
+font-size: medium;
 text-align: center;
 display: inline-block;
   border-radius: 8%;
   transition-duration: 1s;
-  font-size: 2em;
-     :hover{
+       :hover{
       color:black;
-      width: 28%;
+      width: 22%;
         background-color: #0df30d;
         border-color: #f3e706;
         border-bottom: #f3e706;
@@ -40,7 +41,7 @@ display: inline-block;
         -webkit-text-stroke: 1px white;
       
      }
-     @media  only screen and (max-width : 900px){
+          @media  only screen and (max-width : 900px){
  
 padding: 20px;
 width: 100% }
