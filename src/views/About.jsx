@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 
 const Contenedor= styled.div`
 
-background-color: #f7f7f3;
+ background-color: #f7f7f3;
 opacity: 0.9;
 width: 25%;
 max-width: 1100px;
 height: 20em;
 padding: 2%;
 border-radius: 3%;
-margin-left:60%;
-margin-top: 29%;
+margin-top: 40%;
 text-align: center;
+margin-left: 36%; 
 `
  const Bloque= styled.div`
  margin-top: 2%;
@@ -44,7 +44,7 @@ const Estilo = styled.span`
   opacity: 0.8;
   width: 86%;
   color: white; 
-  text-align: justify;
+  text-align: jugitstify;
   margin-top: 33%;
   padding: 5%;
   `
@@ -91,7 +91,7 @@ function About (){
        <Estilo >   
        Esta Single Page Application es desarrollada para Henry, con el entusiasmo propio de quien descubre cómo funciona cada elemento. <br/>
 Rick, Morty y los 826 personajes que aquí se evocan pasan el tiempo entre la vida doméstica y los viajes espaciales e intergalácticos. <br/>
-<br/> <i>Codeando</i> los algoritmos de estas tecnologías, ¿cómo no habitar ese intersticio?
+<br/> <i>Codeando</i> los algoritmos de estas tecnologías, ¿cómo no pretender habitar ese intersticio?
         </Estilo>
        <Tecnologias>
           <h3>   <p> Desarrollada por <Link to="https://aegres.netlify.app/">AEGR </Link></p> Con Javascript, CSS, HTML, React, React Router & Redux </h3>

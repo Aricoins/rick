@@ -10,17 +10,15 @@ background-color: #060000;
 color:white;
 width: 20em;
   padding: 1em;
-  margin: 25%;
+margin: 10%;
+  margin-left: 35%;
+  
   box-shadow: 0em 1em 2em 0.5em;
   border-radius: 1em;
   opacity: 0.9;
-  height: 100%;
-  left:0;
-  right:0;
-  justify-content: flex-right;
-  align-items: right;
-  margin-left: 50%;
-  text-align: right;
+  justify-content:center;
+  align-items: center;
+    text-align: center;
 
 `
 const Propiedades = styled.h3`

@@ -4,8 +4,9 @@ display: grid;
 grid-template-columns:  25% 25% 25% 25%; 
 padding: 5%;
 height: 22em;
-margin-left: 30%;
-margin-top: 8%;
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 15%;
 
 @media only screen and (max-width : 600px) {
 border-color: aliceblue;

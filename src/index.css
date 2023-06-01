@@ -1,13 +1,12 @@
 body{
 
     background-color: #010400;
-    background-image: url(./views/gif/henrickbg.jpg);
+    background-image: url(./views/gif/henrickbgr.jpg);
     display: flex;
-    background-size: contain;
+    background-size: cover;
     flex-direction: column;
     background-repeat: no-repeat;
     background-position: center;
   background-attachment: fixed;
-  max-width: 1200px;
 }
 

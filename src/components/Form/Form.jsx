@@ -9,8 +9,6 @@ const Contenedor= styled.div`
    
     margin: 35%;
 margin-top: 10%;
-margin-left: 40%;
-margin-right: 20%;
 @media only screen and (max-width : 600px) {
  border: 20%;
  display: grid;
