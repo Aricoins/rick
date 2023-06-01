@@ -4,8 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Carta = styled.div`
   
-background-color: #f7f7f3;
-opacity: 0.9;
+  background-color: rgba(255,255,255,.3);
 border-width: 5px;
 border-color: black;
 padding: 2%;
@@ -24,6 +23,7 @@ const ImagenBrilla = styled.h2`
   justify-content: center;
   border-radius: 10%;
   transition: 1s;
+  opacity: 1;
   :hover {
     filter: brightness(1.2);
     width: 83%;
@@ -42,6 +42,7 @@ const EstiloDiv = styled.div`
   align-self: center;
   align-items: center;
   align-content: center;
+  opacity: 1;
   `;
 
 const StyleLink = styled(NavLink)`
@@ -54,11 +55,13 @@ const StyleLink = styled(NavLink)`
   align-items: center;
   align-content: center;
   justify-content: center;
+  opacity: 1;
   :hover {
   
     background-color: #4dcceb45;
     color: black;
     cursor: pointer;
+    opacity: 1;
   }
 `;
 const BotonBorde = styled.button`
@@ -68,7 +71,7 @@ const BotonBorde = styled.button`
   height: 8%;
   width: 15%;
   margin: 5%;
-  
+  opacity: 1;
   cursor: pointer;
   :hover{
     background-color: #eeabab;
@@ -80,7 +83,7 @@ color:white;
 display: flex;
 justify-content: center;
 margin: 1%;
-
+opacity: 1;
 
 `;
 
@@ -88,6 +91,7 @@ const Banda = styled.div`
   background-color: red;
  display: flex;
  padding: 10%;
+ opacity: 1;
   :hover {
     background-color: #4dcceb45;
     color: black;

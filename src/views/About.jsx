@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import imagenn from "./gif/arielgarciarogel.jpg"
+import imagenn from "./gif/rick.gif"
+import { Link } from "react-router-dom";
 
 
 const Contenedor= styled.div`
@@ -7,17 +8,19 @@ const Contenedor= styled.div`
 background-color: #f7f7f3;
 opacity: 0.9;
 width: 25%;
+max-width: 1100px;
 height: 20em;
 padding: 2%;
 border-radius: 3%;
-margin-left:53%;
-margin-top: 25%;
+margin-left:60%;
+margin-top: 29%;
+text-align: center;
 `
  const Bloque= styled.div`
- margin-top: 5%;
-width: 100% ;
-height: 18em;
-background-color: rgba(4, 79, 72, 0.715);
+ margin-top: 2%;
+width: 15em ;
+height: 20em;
+background-color: rgba(4, 79, 72, 0.5);
   display: flex;
   flex-direction: column ;
   justify-content: center;
@@ -28,16 +31,13 @@ background-color: rgba(4, 79, 72, 0.715);
   align-content: center;
     `;
 
-  
-
-
-const Imagen= styled.img`
+  const Imagen= styled.img`
 border-radius: 35%;
-width: 50%;
-height: 50%;
+width: 60%;
+height: 60%;
 display:flex;
-opacity: 0.9;
-margin: 10%;
+opacity: 1;
+margin: 1%;
 `
 const Estilo = styled.span`
   background-color: #0e0e0e;
@@ -45,32 +45,40 @@ const Estilo = styled.span`
   width: 86%;
   color: white; 
   text-align: justify;
-  margin-top: 15%;
+  margin-top: 33%;
   padding: 5%;
   `
+const H2= styled.h2`
+ 
+color: white;
+font-size: 20px;
+:hover{
+
+color: #11f509; 
+
+}
+`
 
 const Tecnologias = styled.div`
-    display: flex;
-    flex-direction:column; 
-    background-color: white;
-    width: 1500px;
-  opacity: 0.8;
-  justify-content: center;
-  text-align: center;
-  color: black;
-  font-family: Lato;
-  font-size: 80%;
-  padding: 5%;
-  align-items: center;
-  margin: 30%;
-
-
-`
-const H2= styled.h2`
   
-color: white;
-font-size: 20px
+    flex-direction: column; 
+    background-color: rgb(4, 79, 72, .8);
+    width: 800px;
+    height: 80%;
+  opacity: 0.9;
+  text-align: center;
+  color: #faf9f9;
+  font-family: Lato;
+  /*font-size: 80%;
+  padding: 2%;
+  align-items: center;*/
+  
+  display: flex;
+  justify-content:center;
+align-content: center;
+margin-top: 50%;
 `
+
 
 
 function About (){
@@ -81,12 +89,12 @@ function About (){
      <H2> About Henrick App</H2>   
      <Imagen src={imagenn} alt="imagen del desarrollador"/>
        <Estilo >   
-       Desarrollé esta Single Page Application para Henry, con el entusiasmo propio de quien descubre cómo funciona cada elemento. <br/>
+       Esta Single Page Application es desarrollada para Henry, con el entusiasmo propio de quien descubre cómo funciona cada elemento. <br/>
 Rick, Morty y los 826 personajes que aquí se evocan pasan el tiempo entre la vida doméstica y los viajes espaciales e intergalácticos. <br/>
 <br/> <i>Codeando</i> los algoritmos de estas tecnologías, ¿cómo no habitar ese intersticio?
         </Estilo>
        <Tecnologias>
-          <h3> Con Javascript, CSS, HTML, React, React Router & Redux </h3>
+          <h3>   <p> Desarrollada por <Link to="https://aegres.netlify.app/">AEGR </Link></p> Con Javascript, CSS, HTML, React, React Router & Redux </h3>
         <div>
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo de JavaScript" width="50px" />
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="Logo de CSS" width="50px" />
@@ -97,6 +105,8 @@ Rick, Morty y los 826 personajes que aquí se evocan pasan el tiempo entre la vi
       </div>
     </Tecnologias>
     </Bloque>
+    
+ 
     </Contenedor>
     </>
     )

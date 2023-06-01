@@ -5,6 +5,7 @@ grid-template-columns:  25% 25% 25% 25%;
 padding: 5%;
 height: 22em;
 margin-left: 30%;
+margin-top: 8%;
 
 @media only screen and (max-width : 600px) {
 border-color: aliceblue;

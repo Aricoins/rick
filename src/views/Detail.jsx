@@ -8,18 +8,20 @@ import styled from "styled-components";
 const Onda = styled.div`
 background-color: #060000;
 color:white;
-width: 22em;
+width: 20em;
   padding: 1em;
-  margin: 1em;
+  margin: 25%;
   box-shadow: 0em 1em 2em 0.5em;
   border-radius: 1em;
   opacity: 0.9;
   height: 100%;
   left:0;
   right:0;
-  justify-content: center;
-  align-items: center;
- margin-left: 40%;
+  justify-content: flex-right;
+  align-items: right;
+  margin-left: 50%;
+  text-align: right;
+
 `
 const Propiedades = styled.h3`
   justify-content: center;
@@ -49,14 +51,14 @@ function Detail(props) {
   return (
     <>
     <Onda>
-    <Detalle>Nombre :{characters.name} </Detalle>
+    <Detalle>Nombre: {characters.name} </Detalle>
       <h1>{id}</h1>
       <img alt="Imagen del personaje" src={characters.image} /> 
     
-     <Propiedades>Género :</Propiedades>  {characters.gender}
+     <Propiedades>Género:</Propiedades>  {characters.gender}
      
       {/* <h4>{props.origin?.name}</h4> */}
-     <Propiedades>Especie :</Propiedades> {characters.species}
+     <Propiedades>Especie:</Propiedades> {characters.species}
     
       <Propiedades>Episodio:</Propiedades> {characters.episode}
       

@@ -1,24 +1,23 @@
 import React from "react"
 import { useState } from "react";
 import styled from "styled-components"
-import imagen from "./ImagenW.jpeg"
+import imagen from "../../views/gif/rick.gif"
 import {validation} from "./validation";
 
 
 const Contenedor= styled.div`
- 
-margin: 35%;
+   
+    margin: 35%;
 margin-top: 10%;
 margin-left: 40%;
 margin-right: 20%;
-@media only screen and (max-width : 900px) {
-border-color: aliceblue;
+@media only screen and (max-width : 600px) {
  border: 20%;
  display: grid;
  grid-template-columns: 100%; 
  grid-template-rows: 100%;
  grid-row-start: 3;
- width: 180px;
+ max-width: 80% ;
  text-align: center;
  justify-content: right;
  align-content: center;
@@ -29,28 +28,30 @@ border-color: aliceblue;
 `
 
 const WelcomeCard = styled.div`
-background-color: black;
+background-color: #2b2626;
 color: white;
-max-width: 80%;
-max-height: 90%;
+max-width: 100%;
+max-height: 100%;
 font-size: 0.8em;
 padding: 1em;
-margin: 10%;
-box-shadow: 0.5em 0.5em 20em 2em;
+box-shadow: 0.5em 0.5em 12em 2em;
 border-radius: 1em;
 opacity: 0.9;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: end;
-  @media only screen and (max-width : 900px){
-width: 22em;
-margin-top: 50px;
-margin-bottom: 50px;
+
+
+:hover{
+  border: 5px solid #07f907;
+
+}
+  @media only screen and (max-width : 600px){
+width: 11em;
 justify-content: center;
 text-align: center;
-
-
+height: 100%;
   }
   `;
 
@@ -60,24 +61,31 @@ text-align: center;
 flex-direction: column;
 background-color: #d6e909;
   align-content: center;
-  height: 20%;
   width: 90%;
-  padding: 2%;
   color: #080000;
   cursor: pointer;
   :hover{
     background-color: #07f907;
     color: #090000;
   }
+  @media only screen and (max-width : 600px){
+width: 5em;
+justify-content: center;
+text-align: center;
+align-self: center;
+height: 2em }
 `;
 const ImagenW = styled.img`
        max-width: 50%;
 `
 const BotonIn = styled.input`
-background-color: #f7f7f6;
 left:0;
 right: 0;
 margin: auto;
+@media only screen and (max-width : 600px){
+width: 7em;
+text-align: center;
+  }
 `;
 
 const H1 = styled.h1`

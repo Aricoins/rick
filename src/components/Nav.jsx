@@ -4,14 +4,22 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 
+const Fijo = styled.nav`
+  position: fixed;
+ margin-left: 30%;
+ z-index:1;
+ top: 0;
 
+`
 const Navigator= styled.div`
-   display: flex;
-   justify-content: center;
+
 background-color: black ;
 padding: 1%;
 opacity: 0.9;
 align-items: center;
+display: flex;
+   justify-content: center;
+   max-width: 1100px;
 @media screen and (max-width : 900px) {
   flex-direction: column;
   
@@ -56,6 +64,7 @@ const StyledLink = styled(NavLink)`
   color: black;
   background: #e4d8d8;
   font-size: 80%;
+
   :active {
     background-color: #000703;
     font-weight: bold;
@@ -68,10 +77,13 @@ const StyledLink = styled(NavLink)`
 export default function Nav (props){
 
     return(
-        <><Navigator>
+        <>
+        <Fijo>
+        <Navigator>
        <Botones> <StyledLink to="/about"> About</StyledLink> </Botones>
        <Botones> <StyledLink to="/home">Henrick App</StyledLink></Botones>
        <SearchBar  searchUser={props.searchUser} />
-       </Navigator> </>
+       </Navigator>
+       </Fijo> </>
               )
 }
