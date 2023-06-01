@@ -6,13 +6,11 @@ import {validation} from "./validation";
 
 
 const Contenedor= styled.div`
-    display: grid;
-    text-align: center;
-    grid-template-columns: 20% 30% 30% 20%;
-    max-width: 80%;
-justify-content: space-around;
-height: 80%;
-transform: traslate (-50%)(-50%); 
+ 
+margin: 35%;
+margin-top: 10%;
+margin-left: 40%;
+margin-right: 20%;
 @media only screen and (max-width : 900px) {
 border-color: aliceblue;
  border: 20%;
@@ -22,8 +20,9 @@ border-color: aliceblue;
  grid-row-start: 3;
  width: 180px;
  text-align: center;
- justify-content: center;
+ justify-content: right;
  align-content: center;
+
 }
 
 
@@ -34,15 +33,16 @@ background-color: black;
 color: white;
 max-width: 80%;
 max-height: 90%;
-padding: 50%;
 font-size: 0.8em;
 padding: 1em;
-margin: 1em;
+margin: 10%;
 box-shadow: 0.5em 0.5em 20em 2em;
 border-radius: 1em;
 opacity: 0.9;
+display: flex;
 flex-direction: column;
-grid-column-start: 3;
+align-items: center;
+justify-content: end;
   @media only screen and (max-width : 900px){
 width: 22em;
 margin-top: 50px;
@@ -124,8 +124,7 @@ export default function Form({ login }) {
       event.preventDefault()
       login(userData)
   }
-return <Contenedor>
- 
+return (<Contenedor>
   <WelcomeCard>
   <H1>Henrick App</H1>
     <ImagenW src={imagen}/>
@@ -163,7 +162,8 @@ return <Contenedor>
           usuario@henrick.app 
           <br /> Password: <br />
           pass1234 </WelcomeCard>
-      </Contenedor>;
+      </Contenedor>
+      )
 }
 
 // export default function Form({login}) {

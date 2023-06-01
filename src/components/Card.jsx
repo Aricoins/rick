@@ -6,7 +6,8 @@ const Carta = styled.div`
   
 background-color: #f7f7f3;
 opacity: 0.9;
-height: 25em;
+border-width: 5px;
+border-color: black;
 padding: 2%;
 margin: 2%;
 display: column;
@@ -30,19 +31,18 @@ const ImagenBrilla = styled.h2`
 `;
 
 const EstiloDiv = styled.div`
-   width: 90% ;
-background-color: rgba(4, 79, 72, 0.715);
+  width: 90%;
+  background-color: rgba(4, 79, 72, 0.715);
   display: flex;
   flex-direction: column ;
   justify-content: center;
   margin: 0.5em;
   box-shadow: 0em 1em 2em 0.5em;
-  height: 80%;
   border-radius: 1em;
   align-self: center;
   align-items: center;
   align-content: center;
-  height: 80% `;
+  `;
 
 const StyleLink = styled(NavLink)`
    color: #f2f5f4;

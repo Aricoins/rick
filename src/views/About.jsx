@@ -1,47 +1,53 @@
 import styled from "styled-components"
 import imagenn from "./gif/arielgarciarogel.jpg"
 
- const Bloque= styled.div`
- background-color: red;
-margin-top: 50%;;
-width: 90% ;
-background-color: rgba(4, 79, 72, 0.715);
-  display: flex;
-  flex-direction: column ;
-  justify-content: center;
-   box-shadow: 0em 1em 2em 0.5em;
-  height: 80%;
-  border-radius: 1em;
-  align-self: center;
-  align-items: center;
-  align-content: center;
-  align-tracks: center;
-  height: 80% `;
 
-  
 const Contenedor= styled.div`
 
 background-color: #f7f7f3;
 opacity: 0.9;
-width: 20em;
-height: 25em;
+width: 25%;
+height: 20em;
 padding: 2%;
-margin: 10%;
-display: flex;
-flex-direction: flex;
-justify-content: center;
-align-self: center;
-
+border-radius: 3%;
+margin-left:53%;
+margin-top: 25%;
 `
+ const Bloque= styled.div`
+ margin-top: 5%;
+width: 100% ;
+height: 18em;
+background-color: rgba(4, 79, 72, 0.715);
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+   box-shadow: 0em 0em 2em 0.5em;
+  border-radius: 1em;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+    `;
+
+  
 
 
 const Imagen= styled.img`
 border-radius: 35%;
-width: 12em;
-height: 15em;
+width: 50%;
+height: 50%;
 display:flex;
 opacity: 0.9;
+margin: 10%;
 `
+const Estilo = styled.span`
+  background-color: #0e0e0e;
+  opacity: 0.8;
+  width: 86%;
+  color: white; 
+  text-align: justify;
+  margin-top: 15%;
+  padding: 5%;
+  `
 
 const Tecnologias = styled.div`
     display: flex;
@@ -56,6 +62,8 @@ const Tecnologias = styled.div`
   font-size: 80%;
   padding: 5%;
   align-items: center;
+  margin: 30%;
+
 
 `
 const H2= styled.h2`
@@ -63,12 +71,7 @@ const H2= styled.h2`
 color: white;
 font-size: 20px
 `
-const Estilo= styled.span`
-  background-color: #0e0e0e;
-  opacity: 0.8;
-  width: 22em;
-  color: white; 
-  padding: 20%; `
+
 
 function About (){
 
@@ -80,7 +83,7 @@ function About (){
        <Estilo >   
        Desarrollé esta Single Page Application para Henry, con el entusiasmo propio de quien descubre cómo funciona cada elemento. <br/>
 Rick, Morty y los 826 personajes que aquí se evocan pasan el tiempo entre la vida doméstica y los viajes espaciales e intergalácticos. <br/>
-Codeando las magias de la tecnología, ¿cómo no jugar a habitar ese intersticio?
+<br/> <i>Codeando</i> los "conjuros" de estas tecnología, ¿cómo no jugar a habitar ese intersticio?
         </Estilo>
        <Tecnologias>
           <h3> Con Javascript, CSS, HTML, React, React Router & Redux </h3>

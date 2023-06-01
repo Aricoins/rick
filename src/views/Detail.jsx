@@ -17,10 +17,9 @@ width: 22em;
   height: 100%;
   left:0;
   right:0;
-  margin:auto;
   justify-content: center;
   align-items: center;
- 
+ margin-left: 40%;
 `
 const Propiedades = styled.h3`
   justify-content: center;
