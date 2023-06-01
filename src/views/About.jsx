@@ -83,7 +83,7 @@ function About (){
        <Estilo >   
        Desarrollé esta Single Page Application para Henry, con el entusiasmo propio de quien descubre cómo funciona cada elemento. <br/>
 Rick, Morty y los 826 personajes que aquí se evocan pasan el tiempo entre la vida doméstica y los viajes espaciales e intergalácticos. <br/>
-<br/> <i>Codeando</i> los "conjuros" de estas tecnología, ¿cómo no jugar a habitar ese intersticio?
+<br/> <i>Codeando</i> los algoritmos de estas tecnologías, ¿cómo no habitar ese intersticio?
         </Estilo>
        <Tecnologias>
           <h3> Con Javascript, CSS, HTML, React, React Router & Redux </h3>
