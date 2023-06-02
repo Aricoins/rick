@@ -41,7 +41,7 @@ display: inline-block;
   transition-duration: 1s;
        :hover{
       color:black;
-      width: 22%;
+      width: 33%;
         background-color: #0df30d;
         border-color: #f3e706;
         border-bottom: #f3e706;
@@ -64,11 +64,11 @@ const StyledLink = styled(NavLink)`
   color: black;
   background: #e4d8d8;
   font-size: 80%;
-
-  :active {
+ &active{
     background-color: #000703;
     font-weight: bold;
     color: #e4d8d8;
+    width: ;
   }
 
 
