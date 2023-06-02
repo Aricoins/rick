@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { connect } from "react-redux";
+import { addFav, removeFav } from "../Redux/actions/actions";
+import { useEffect, useState } from "react";
 
 const Carta = styled.div`
   
@@ -100,22 +103,86 @@ const Banda = styled.div`
 `;
 
 
-export default function Card(props) {
+ function Card({id,
+  name,
+  status,
+  species,
+  gender,
+  origin,
+  image,
+  onClose,
+  addFav,
+  removeFav,
+  myFavorites,
+  eliminarPersonaje}) {
+  const[isFav, setIsFav] = useState(false)
+
+ function handleFavorite(){
+
+    if (isFav){ setIsFav(false); 
+                removeFav(id)
+    }else{
+      setIsFav(true)
+      addFav( { id,
+        name,
+        status,
+        species,
+        gender,
+        origin,
+        image,
+        onClose,
+        addFav,
+        removeFav,
+        myFavorites,
+        eliminarPersonaje})
+    }
+  }
+
+  useEffect(() => {
+    myFavorites.forEach((fav) => {
+       if (fav.id === id) {
+          setIsFav(true);
+       }
+    });
+ }, [myFavorites, id]);
 
    return (
  <Carta>
- <BotonBorde onClick={() => { props.eliminarPersonaje ()}}> X </BotonBorde>
+ <BotonBorde onClick={() => { eliminarPersonaje ()}}> X </BotonBorde>
  <EstiloDiv>
+ {
+   isFav ? (
+      <BotonBorde onClick={handleFavorite}>❤️</BotonBorde>
+   ) : (
+      <BotonBorde onClick={handleFavorite}>🤍</BotonBorde>
+   )
+}
 <Banda>     
-  <StyleLink to ={`/detail/${props.id}`}>{props.name}</StyleLink>
+  <StyleLink to ={`/detail/${id}`}>{name}</StyleLink>
 </Banda>
       <ImagenBrilla>
-       <img src={props.image} alt="Acá debería verse la imagen del perdonaje"  />
+       <img src={image} alt="Acá debería verse la imagen del perdonaje"  />
       </ImagenBrilla>
-      <H3>{props.species}</H3>
-      <H3>{props.gender}</H3>
-      <H3>{props.id}</H3>
+      <H3>{species}</H3>
+      <H3>{gender}</H3>
+      <H3>{id}</H3>
     </EstiloDiv>
     </Carta> );
 }
 
+export function mapDispatchToProps(dispatch){
+return {
+    addFav: function(props){
+    dispatch (addFav(props))
+},
+  removeFav: function(id){
+  dispatch(removeFav(id))
+}}
+}
+export function mapStateToProps(state){
+return {
+  myFavorites: state.myFavorites
+}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Card) 

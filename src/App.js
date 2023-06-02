@@ -8,6 +8,7 @@ import About from './views/About'
  import  Detail  from './views/Detail';
  import Form from './components/Form/Form';
  import { useParams } from 'react-router-dom';
+import Favorites from './components/Favorites';
 
 
 
@@ -15,7 +16,7 @@ function App() {
    const { pathname } = useLocation()
    const navigate = useNavigate()
    const [characters, setCharacters] = useState([])
-   const [access, setAccess] = useState(false)
+   const [access, setAccess] = useState(true)
    const {id} = useParams()
 
    const EMAIL = 'usuario@henrick.app';
@@ -62,6 +63,7 @@ function App() {
           <Route path='/' element={<Form login={login}/>} />
           <Route path='/home' element={<Cards characters={characters} onClose={onClose} eliminarPersonaje={eliminarPersonaje}/>} />
           <Route path='/about' element={<About/>}/>
+          <Route path="/favorites" element={<Favorites characters={characters}/>}/>
           <Route path='/detail/:id' element={
           <Detail 
                   id={id} 

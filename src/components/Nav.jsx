@@ -82,6 +82,7 @@ export default function Nav (props){
         <Navigator>
        <Botones> <StyledLink to="/about"> About</StyledLink> </Botones>
        <Botones> <StyledLink to="/home">Henrick App</StyledLink></Botones>
+       <Botones> <StyledLink to="/favorites">Favorites</StyledLink></Botones>
        <SearchBar  searchUser={props.searchUser} />
        </Navigator>
        </Fijo> </>

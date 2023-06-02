@@ -7,7 +7,7 @@ const Fondo = styled.div`
 background-image: url(C:\Users\igorm\OneDrive\Escritorio\rivk\rick\public\rick.gif)
 `
 
-function Home(props) {
+function Home() {
 
 return (
 

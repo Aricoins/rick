@@ -64,11 +64,12 @@ const Tecnologias = styled.div`
     flex-direction: column; 
     background-color: rgb(4, 79, 72, .8);
     width: 800px;
-    height: 80%;
+    height: 90%;
   opacity: 0.9;
   text-align: center;
   color: #faf9f9;
   font-family: Lato;
+  padding: 2%;
   /*font-size: 80%;
   padding: 2%;
   align-items: center;*/
