@@ -16,7 +16,7 @@ function App() {
    const { pathname } = useLocation()
    const navigate = useNavigate()
    const [characters, setCharacters] = useState([])
-   const [access, setAccess] = useState(true)
+   const [access, setAccess] = useState(false)
    const {id} = useParams()
 
    const EMAIL = 'usuario@henrick.app';
