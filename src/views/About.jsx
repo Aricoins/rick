@@ -11,25 +11,42 @@ width: 25%;
 max-width: 1100px;
 height: 20em;
 padding: 2%;
-border-radius: 3%;
 margin-top: 40%;
+border-radius: 3%;
 text-align: center;
 margin-left: 36%; 
+@media only screen and (max-width : 800px) {
+border-color: aliceblue;
+margin-top: 80%;
+ border: 20%;
+ display: grid;
+ grid-template-columns: 80%; 
+ grid-template-rows: 80%;
+ 
+}
 `
- const Bloque= styled.div`
- margin-top: 2%;
+const Bloque= styled.div`
+margin-top: 2%;
 width: 15em ;
 height: 20em;
 background-color: rgba(4, 79, 72, 0.5);
-  display: flex;
-  flex-direction: column ;
-  justify-content: center;
-   box-shadow: 0em 0em 2em 0.5em;
-  border-radius: 1em;
-  align-self: center;
-  align-items: center;
-  align-content: center;
-    `;
+display: flex;
+flex-direction: column ;
+justify-content: center;
+box-shadow: 0em 0em 2em 0.5em;
+border-radius: 1em;
+align-self: center;
+align-items: center;
+align-content: center;
+@media only screen and (max-width : 600px) {
+border-color: aliceblue;
+margin-top: 30%;
+ border: 20%;
+ display: grid;
+ grid-template-columns: 80%; 
+ grid-template-rows: 80%;
+ 
+}    `;
 
   const Imagen= styled.img`
 border-radius: 35%;

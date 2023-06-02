@@ -12,14 +12,21 @@ width: 20em;
   padding: 1em;
 margin: 10%;
   margin-left: 35%;
-  
   box-shadow: 0em 1em 2em 0.5em;
   border-radius: 1em;
   opacity: 0.9;
   justify-content:center;
   align-items: center;
     text-align: center;
-
+    @media only screen and (max-width : 600px) {
+border-color: aliceblue;
+margin-top: 30%;
+ border: 20%;
+ display: grid;
+ grid-template-columns: 80%; 
+ grid-template-rows: 80%;
+ 
+}
 `
 const Propiedades = styled.h3`
   justify-content: center;

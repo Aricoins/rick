@@ -19,8 +19,8 @@ opacity: 0.9;
 align-items: center;
 display: flex;
    justify-content: center;
-   max-width: 1100px;
-@media screen and (max-width : 900px) {
+   max-width: 1500px;
+@media screen and (max-width : 700px) {
   flex-direction: column;
   
 }
